@@ -30,7 +30,8 @@ options:
   OLLAMA_NUM_PARALLEL: 1
   OLLAMA_ORIGINS: ""
   HSA_OVERRIDE_GFX_VERSION: null
-  GGML_CUDA_ENABLE_UNIFIED_MEMORY: null
+  OLLAMA_LLM_LIBRARY: null
+  OLLAMA_CONTEXT_LENGTH: null
   gpus: all
 schema:
   OLLAMA_FLASH_ATTENTION: int
@@ -42,14 +43,16 @@ schema:
   OLLAMA_ORIGINS: str
   HSA_OVERRIDE_GFX_VERSION: str
   GGML_CUDA_ENABLE_UNIFIED_MEMORY: list(ON|OFF)
+  OLLAMA_LLM_LIBRARY: str
+  OLLAMA_CONTEXT_LENGTH: int
   gpus: str
 devices:
-  - /dev/dri/renderD128
+  - /dev/kfd
+  - /dev/dri
   - /dev/apex_0
   - /dev/apex_1
   - /dev/apex_2
   - /dev/apex_3
-  - /dev/dri/card0
   - /dev/vchiq
   - /dev/video10
   - /dev/video0

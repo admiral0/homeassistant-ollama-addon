@@ -23,6 +23,9 @@ configuration:
   HSA_OVERRIDE_GFX_VERSION:
     name: HSA_OVERRIDE_GFX_VERSION
     description: Override rocm auto detection by specifying hw version - for example "11.0.0" for HX 370
-  GGML_CUDA_ENABLE_UNIFIED_MEMORY:
-    name: GGML_CUDA_ENABLE_UNIFIED_MEMORY
-    description: Enable unified memory for APUs (amd ryzen ai, etc)
+  OLLAMA_LLM_LIBRARY:
+    name: OLLAMA_LLM_LIBRARY
+    description: Force specific library for acceleration
+  OLLAMA_CONTEXT_LENGTH:
+    name: OLLAMA_CONTEXT_LENGTH
+    description: override context length
