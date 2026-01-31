@@ -1,7 +1,7 @@
 name: "Ollama"
 description: "Get up and running with large language models."
 # renovate: datasource=github-tags depName=ollama/ollama
-version: "0.15.2"
+version: "0.15.2-rocm"
 slug: "ollama"
 arch:
   - aarch64
@@ -10,7 +10,7 @@ url: https://ollama.com
 map:
   - config:rw
   - share:rw
-image: docker.io/ollama/ollama:rocm
+image: docker.io/ollama/ollama
 init: false
 ingress: true
 legacy: true
