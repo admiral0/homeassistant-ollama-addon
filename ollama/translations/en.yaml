@@ -20,3 +20,6 @@ configuration:
   OLLAMA_ORIGINS:
     name: OLLAMA_ORIGINS
     description: The allowed origins for the API, set to "*" to allow all. Clear to set to the default locations
+  HSA_OVERRIDE_GFX_VERSION:
+    name: HSA_OVERRIDE_GFX_VERSION
+    description: Override rocm auto detection by specifying hw version - for example "11.0.0" for HX 370
