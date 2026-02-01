@@ -32,6 +32,7 @@ options:
   HSA_OVERRIDE_GFX_VERSION: null
   OLLAMA_LLM_LIBRARY: null
   OLLAMA_CONTEXT_LENGTH: null
+  OLLAMA_VULKAN: 0
   gpus: all
 schema:
   OLLAMA_FLASH_ATTENTION: int
@@ -42,9 +43,9 @@ schema:
   OLLAMA_NUM_PARALLEL: int
   OLLAMA_ORIGINS: str
   HSA_OVERRIDE_GFX_VERSION: str
-  GGML_CUDA_ENABLE_UNIFIED_MEMORY: list(ON|OFF)
   OLLAMA_LLM_LIBRARY: str
   OLLAMA_CONTEXT_LENGTH: int
+  OLLAMA_VULKAN: int
   gpus: str
 devices:
   - /dev/kfd

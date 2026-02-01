@@ -29,3 +29,6 @@ configuration:
   OLLAMA_CONTEXT_LENGTH:
     name: OLLAMA_CONTEXT_LENGTH
     description: override context length
+  OLLAMA_VULKAN:
+    name: OLLAMA_VULKAN
+    description: use vulkan to accelerate llm inference. Set it to 1 to enable
